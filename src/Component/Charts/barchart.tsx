@@ -1,4 +1,4 @@
-import React, { PureComponent, useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { BarChart, Bar, ResponsiveContainer, CartesianGrid, XAxis, YAxis } from 'recharts';
 import CustomSelect from '../Reusable/select.tsx';
 import { CustomMenu, dailyData, monthlyData, weeklyData } from '../../utils/mockdata.tsx';

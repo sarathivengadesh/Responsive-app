@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Cell, Label, Pie, PieChart, Tooltip } from "recharts";
+import { Cell, Label, Pie, PieChart } from "recharts";
 import { PieChartLabel } from "../../utils/helper.tsx";
 
 interface PieChartData {
