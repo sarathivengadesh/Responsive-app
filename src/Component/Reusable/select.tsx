@@ -11,19 +11,21 @@ export default function CustomSelect({option,selectValue,setSelectedValue}:{opti
   };
 
   return (
-    <FormControl sx={{ m: 0.5, minWidth: 120, }} size="small">
+    <FormControl sx={{ m: 0.5, minWidth: 120 }} size="small">
       <Select
         displayEmpty
         inputProps={{ 'aria-label': 'Without label' }}
         value={selectValue?.value}
         onChange={handleChange}
         sx={{
-            color:"white",
+          height:20,
+          borderRadius:4,
+          fontSize:12,
+          color:"white",
             '& .MuiOutlinedInput-notchedOutline': {
-                borderColor: 'white'
-              },
-              '&:hover .MuiOutlinedInput-notchedOutline': {
-                borderColor: 'white'
+                borderColor: '#4C4E52',
+                // backgroundColor:"#4C4E52",
+           
               },
               '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
                 borderColor: 'white'

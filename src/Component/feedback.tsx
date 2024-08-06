@@ -13,15 +13,15 @@ export default function FeedbackSection() {
     }
   return (
     <div className='m-2 text-white text-start'>
-        <div className='text-base font-bold mb-2'>Feedback Section</div>
-         <div className='h-[200px] overflow-y-scroll'>
+        <div className='h3 mb-2'>Feedback Section</div>
+         <div className='h-[200px] overflow-y-scroll scrollbar-webkit'>
          {feedBackForm?.map(feedback =>(
              <div className='flex flex-col gap-2 border-b-2 border-indigo-500 p-2'>
-             <div className='flex items-center gap-2 '><Avatar {...stringAvatar(feedback?.name)} />{feedback?.name}</div>
+             <div className='flex items-center gap-2 text1 '><Avatar {...stringAvatar(feedback?.name)} />{feedback?.name}</div>
              <div className="flex items-center">
                  {checkRating(feedback?.rating)}
              </div>
-             <div className='text-start ml-2'>{feedback?.description}</div>
+             <div className='text-start ml-2 text1'>{feedback?.description}</div>
          </div>
          ))}
          </div>

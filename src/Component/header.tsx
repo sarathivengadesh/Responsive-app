@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react'
 import WidgetsIcon from '@mui/icons-material/Widgets';
-import Search from './search.tsx';
+import Search from './Reusable/search.tsx';
 import SearchIcon from '@mui/icons-material/Search';
 import EmailIcon from '@mui/icons-material/Email';
-import IconEffect from './icon-bg-effect.tsx';
+import IconEffect from './Reusable/icon-bg-effect.tsx';
 import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Avatar } from '@mui/material';
@@ -14,7 +14,7 @@ export default function Header({children}:{children:ReactNode}) {
   return (
         <div className='w-full h-screen flex flex-row'>
             <div className='grow-0 w-12 h-full bg-primary'>
-                <WidgetsIcon sx={{width:35,height:35,fill:"#7396FE"}} className='m-2 w'/>
+                <WidgetsIcon sx={{width:35,height:35,fill:"#7396FE"}} className='m-2'/>
                 <Sidebar/>
             </div>
             <div className='w-full flex flex-col'>

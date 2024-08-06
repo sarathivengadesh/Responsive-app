@@ -5,27 +5,41 @@
 }
 .h1{
   text-align: start;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .h2{
   text-align: start;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+h3{
+  text-align: start;
+  font-size: 1.10rem;
+  font-weight: 600;
+}
+h4{
+  text-align: start;
+  font-size: 1rem;
   font-weight: 600;
 }
 .count{
   text-align: start;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .text1{
   text-align: start;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 .text2{
   text-align: start;
-  font-size: 0.5rem;
+  font-size: 8px;
   font-weight: 400;
 }
-
+.text3{
+  text-align: start;
+  font-size: 6px;
+  font-weight: 400;
+}

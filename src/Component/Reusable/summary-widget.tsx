@@ -1,7 +1,7 @@
 import React from 'react'
 import IconWidget from './icon-widget.tsx';
 import Widget from './widget.tsx';
-import { trend } from '../utils/helper.tsx';
+import { trend } from '../../utils/helper.tsx';
 
 
 export default function SummaryWidget({icon,color,totalCount,title,status,percent}:{color: string;

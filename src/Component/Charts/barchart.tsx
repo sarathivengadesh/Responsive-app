@@ -1,7 +1,7 @@
 import React, { PureComponent, useEffect, useState } from 'react';
 import { BarChart, Bar, ResponsiveContainer, CartesianGrid, XAxis, YAxis } from 'recharts';
-import CustomSelect from './select.tsx';
-import { CustomMenu, dailyData, monthlyData, weeklyData } from '../utils/mockdata.tsx';
+import CustomSelect from '../Reusable/select.tsx';
+import { CustomMenu, dailyData, monthlyData, weeklyData } from '../../utils/mockdata.tsx';
 
 
 export default function CustomBarChart() {
@@ -19,7 +19,7 @@ export default function CustomBarChart() {
     return (
         <div className='w-full h-full p-2 flex flex-col gap-1'>
             <div className='text-white w-full flex flex-row justify-between items-center'>
-                <div className='h2'>Activity</div>
+                <div className='h3 mb-2'>Activity</div>
                 <CustomSelect selectValue={time} setSelectedValue={setTime} option={CustomMenu} />
             </div>
             <ResponsiveContainer width="100%" height={180}>

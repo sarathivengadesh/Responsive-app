@@ -5,9 +5,9 @@ import React from 'react';
 
 export const trend=(status:string,percent:number)=>{
     if(status==="Decrease"){
-       return <div className='text2 text-red-500'><ArrowDropDownIcon/>{`${percent}%`}</div>
+       return <div className='text1 text-red-500'><ArrowDropDownIcon/>{`${percent}%`}</div>
     }else if(status==="Increase"){
-       return <div className='text2 text-green-500'><ArrowDropUpIcon/>{`${percent}%`}</div>
+       return <div className='text1 text-green-500'><ArrowDropUpIcon/>{`${percent}%`}</div>
     }
 }
 export const PieChartLabel = ({ viewBox, value1, value2,value3 }) => {

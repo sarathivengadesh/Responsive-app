@@ -13,6 +13,28 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}){
+      const newUtilities = {
+        ".scrollbar-webkit":{
+          "&::-webkit-scrollbar" : {
+            width: '8px',
+          },
+          "&::-webkit-scrollbar-track":{
+            background: '#1F2029',
+          },
+          "&::-webkit-scrllbar-thumb":{
+            backgroundColor: 'gray',
+            borderRadius: '10px',
+            border: '2px solid #1F2029',
+          },
+          '&::-webkit-scrollbar-thumb:hover': {
+            backgroundColor: '#555',
+          },
+        }
+      }
+      addUtilities(newUtilities,["responsive","hover"])
+    }
+  ],
 }
 

@@ -22,7 +22,6 @@ const HeaderReuseComp = ({ dtx }: HeaderReuseCompProps) => {
       key={i}
       breakall="break-all"
       mwidth="450px" 
-      style={{ fontSize: "14px" }}
     >
       {item}
     </CustomTableCell>
@@ -46,26 +45,12 @@ const CustomTableHead = styled(TableHead)({
 
 const StyledTableContainer = styled(TableContainer)({
   maxHeight: '200px', 
-  overflowY: 'auto',
-  '&::-webkit-scrollbar': {
-    width: '8px',
-  },
-  '&::-webkit-scrollbar-track': {
-    background: '#1F2029',
-  },
-  '&::-webkit-scrollbar-thumb': {
-    backgroundColor: 'gray',
-    borderRadius: '10px',
-    border: '2px solid #1F2029',
-  },
-  '&::-webkit-scrollbar-thumb:hover': {
-    backgroundColor: '#555',
-  },
+  overflowY: 'auto'
 });
 
 export function TableComponent({ row, tableHeading }: TableProps) {
   return (
-    <StyledTableContainer >
+    <StyledTableContainer className="scrollbar-webkit" >
       <Table stickyHeader >
       <CustomTableHead>
         <TableRow >
@@ -82,11 +67,11 @@ export function OrderItem({ data }: { data: OrderType[] }) {
     <>
       { 
         data?.map((item: OrderType, index: number) => (
-          <TableRow key={index} >
-            <CustomTableCell><div className="flex items-center gap-2"> <Avatar {...stringAvatar(item.name)} />{item.name}</div></CustomTableCell>
-            <CustomTableCell>{item.orderDate}</CustomTableCell>
-            <CustomTableCell>{item.worthOfOrder}$</CustomTableCell>
-            <CustomTableCell><StautsTag type={item.delivered}/> </CustomTableCell>
+          <TableRow key={index} className="text2" >
+            <CustomTableCell fontSize="10px"><div className="flex items-center gap-2"> <Avatar {...stringAvatar(item.name)} />{item.name}</div></CustomTableCell>
+            <CustomTableCell  fontSize="10px">{item.orderDate}</CustomTableCell>
+            <CustomTableCell  fontSize="10px">{item.worthOfOrder}$</CustomTableCell>
+            <CustomTableCell  fontSize="10px"><StautsTag type={item.delivered}/> </CustomTableCell>
           </TableRow>
         ))
       }

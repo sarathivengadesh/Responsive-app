@@ -1,6 +1,5 @@
 
 import { styled ,TableCell} from '@mui/material';
-import React from 'react';
 
 export const iconStyle={
     active:"#7396FE",
@@ -9,11 +8,12 @@ export const iconStyle={
 interface CustomTableCellProps {
     breakall?: string;
     mwidth?: string;
+    fontSize?:string;
   }
 export const CustomTableCell = styled(TableCell)<CustomTableCellProps>`
   border: 1px solid white;
   max-width: ${props => props?.mwidth || "unset"};
   word-break: ${props => props?.breakall || "unset"};
-  font-size: 12px;
+  font-size:  ${props => props?.fontSize || "12px"};
   color:white
 `;

@@ -3,6 +3,6 @@ import Home from "../Page/home.tsx"
 
 export const router = [
     {path:"/", index:true, element:<Home/>},
-    {path:"/chart", element:<h1>hellow 2</h1>},
-    {path:"/data", element:<h1>hellow 3</h1>}
+    {path:"/chart", element:<div className="text-black m-auto font-bold">No Data</div>},
+    {path:"/data", element:<div className="text-black m-auto font-bold">No Data</div>}
 ]

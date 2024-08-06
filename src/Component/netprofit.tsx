@@ -7,23 +7,20 @@ export default function NetProfit({totalProfit,status,percent}:{totalProfit:stri
 
   return (
     <div className='p-2 w-full h-full grid grid-cols-2 gap-4'>
-     <div className='h-full grid-cols-1 flex flex-col justify-between '>
+     <div className='h-full grid-cols-1 flex flex-col justify-between'>
         <div className='text1'>Net Profit</div>
         <div className='count'>{totalProfit}</div>
         {trend(status,percent)}
      </div>
      <div className='grid-cols-1 w-full mx-auto'>
-
         <RechartPieChart
           data={pieChartData}
           totalCount="70"
           label1='Goal'
           label2='Completed'
-          innerRadius={40}
-          outerRadius={50}
-        
+          innerRadius={35}
+          outerRadius={45}
         />
-      
         <div className='text2 mx-auto'>*The values here has been rounded off.</div>
      </div>
     </div>

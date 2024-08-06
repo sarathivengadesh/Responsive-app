@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Cell, Label, Pie, PieChart, Tooltip } from "recharts";
-import { PieChartLabel } from "../utils/helper.tsx";
+import { PieChartLabel } from "../../utils/helper.tsx";
 
 interface PieChartData {
     name?:string;
@@ -22,8 +22,8 @@ export const CustomTooltip = ({ active, payload }) => {
 };
 export default function RechartPieChart({
   data= [],
-  cx = 70,
-  cy = 60,
+  cx = 50,
+  cy = 50,
   innerRadius = 25,
   outerRadius = 65,
   grid = "grid-cols-2",
@@ -47,7 +47,7 @@ export default function RechartPieChart({
   return (
     <div className={`w-full grid ${grid} overflow-hidden`}>
       <div className="col-span-1">
-        <PieChart width={130} height={130}>
+        <PieChart width={105} height={105}>
           <Pie
             dataKey="value"
             minAngle={3}
