@@ -1,6 +1,11 @@
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import AdUnitsIcon from '@mui/icons-material/AdUnits';
 import React from 'react';
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+import MenuIcon from '@mui/icons-material/Menu';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
+import CancelIcon from '@mui/icons-material/Cancel';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 export const summaryData = [
     {
@@ -13,8 +18,8 @@ export const summaryData = [
          percent:3
     },{
         id:2,
-        color:"#F55D5C",
-        icon: <AdUnitsIcon style={{fill:"#F55D5C"}} />,
+        color:"#00CB8C",
+        icon: <DeliveryDiningIcon style={{fill:"#00CB8C"}} />,
         totalCount:70,
         title:"Total Delivered",
         status:"Decrease",
@@ -22,8 +27,8 @@ export const summaryData = [
     },
     {
         id:3,
-        color:"#F45C5B",
-        icon: <AdUnitsIcon style={{fill:"#F45C5B"}} />,
+        color:"#F55D5C",
+        icon: <CancelIcon style={{fill:"#F55D5C"}} />,
         totalCount:5,
         title:"Total Cancelled",
         status:"Decrease",
@@ -31,8 +36,8 @@ export const summaryData = [
     },
     {
         id:4,
-        color:"#EE6AB6",
-        icon: <AdUnitsIcon style={{fill:"#EE6AB6"}} />,
+        color:"#E84590",
+        icon: <MonetizationOnIcon style={{fill:"#E84590"}} />,
         totalCount:"$37k",
         title:"Total Revenue",
         status:"Increase",
@@ -50,15 +55,15 @@ export const options = [
     },
     {
         id:2,
-        icon:<AccessAlarmsIcon style={{fill:"#4463F7"}} />,
+        icon:<RestaurantMenuIcon style={{fill:"#4463F7"}} />,
         title:"Popular Dishes",
         color:"#4463F7"
     },
     {
         id:3,
-        icon:<AccessAlarmsIcon style={{fill:"#4463F7"}} />,
+        icon:<MenuIcon style={{fill:"#34A2CA"}} />,
         title:"Menus",
-        color:"#4463F7"
+        color:"#34A2CA"
     }
 ]
 

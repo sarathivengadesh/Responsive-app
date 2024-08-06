@@ -20,12 +20,12 @@ export const PieChartLabel = ({ viewBox, value1, value2,value3 }) => {
          </tspan>
        </text>
        <text x={cx} y={value1 ? cy  : cy} textAnchor="middle" dominantBaseline="central">
-         <tspan alignmentBaseline="middle" fontSize="10px" fill='white' fontFamily="Poppins">
+         <tspan alignmentBaseline="middle" fontSize="8px" fill='white' fontFamily="Poppins">
            {value2}
          </tspan>
        </text>
        {value3 && <text x={cx} y={value1 ? cy + 12 : cy} textAnchor="middle" dominantBaseline="central">
-         <tspan alignmentBaseline="middle" fontSize="10px" fontFamily="Poppins" fill='white'>
+         <tspan alignmentBaseline="middle" fontSize="8px" fontFamily="Poppins" fill='white'>
            {value3}
          </tspan>
        </text>}

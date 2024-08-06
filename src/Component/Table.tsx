@@ -44,7 +44,7 @@ const CustomTableHead = styled(TableHead)({
 });
 
 const StyledTableContainer = styled(TableContainer)({
-  maxHeight: '200px', 
+  maxHeight: '300px', 
   overflowY: 'auto'
 });
 
@@ -68,10 +68,10 @@ export function OrderItem({ data }: { data: OrderType[] }) {
       { 
         data?.map((item: OrderType, index: number) => (
           <TableRow key={index} className="text2" >
-            <CustomTableCell fontSize="10px"><div className="flex items-center gap-2"> <Avatar {...stringAvatar(item.name)} />{item.name}</div></CustomTableCell>
-            <CustomTableCell  fontSize="10px">{item.orderDate}</CustomTableCell>
-            <CustomTableCell  fontSize="10px">{item.worthOfOrder}$</CustomTableCell>
-            <CustomTableCell  fontSize="10px"><StautsTag type={item.delivered}/> </CustomTableCell>
+            <CustomTableCell breakall="break-all" fontSize="10px"><div className="flex items-center gap-2"> <Avatar {...stringAvatar(item.name)} />{item.name}</div></CustomTableCell>
+            <CustomTableCell breakall="break-all" fontSize="10px">{item.orderDate}</CustomTableCell>
+            <CustomTableCell breakall="break-all" fontSize="10px">{item.worthOfOrder}$</CustomTableCell>
+            <CustomTableCell breakall="break-all" fontSize="10px"><StautsTag type={item.delivered}/> </CustomTableCell>
           </TableRow>
         ))
       }

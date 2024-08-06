@@ -54,6 +54,8 @@ export default function RechartPieChart({
             data={data}
             cx={cx}
             cy={cy}
+            startAngle={90}
+            endAngle={-270} 
             innerRadius={innerRadius}
             outerRadius={outerRadius}
             fill="#82CA9D"

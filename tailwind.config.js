@@ -16,14 +16,14 @@ module.exports = {
   plugins: [
     function({addUtilities}){
       const newUtilities = {
-        ".scrollbar-webkit":{
-          "&::-webkit-scrollbar" : {
+        ".scrollbar-webkit": {
+          "&::-webkit-scrollbar": {
             width: '8px',
           },
-          "&::-webkit-scrollbar-track":{
+          "&::-webkit-scrollbar-track": {
             background: '#1F2029',
           },
-          "&::-webkit-scrllbar-thumb":{
+          "&::-webkit-scrollbar-thumb": {
             backgroundColor: 'gray',
             borderRadius: '10px',
             border: '2px solid #1F2029',

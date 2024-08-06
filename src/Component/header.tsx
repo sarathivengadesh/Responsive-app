@@ -20,7 +20,7 @@ export default function Header({children}:{children:ReactNode}) {
             <div className='w-full flex flex-col'>
               <div className='p-2 px-4 w-full bg-primary flex justify-between'>
               <Search value='' onChange={()=>{}} placeholder='' className='basic-1/4 h-8' icon={<SearchIcon/>} />
-                <div className='flex justify-between gap-4'>
+                <div className='flex justify-between gap-2'>
                 <IconEffect icon={<EmailIcon />}/>
                 <IconEffect icon={<SettingsIcon/>}/>
                 <IconEffect icon={<NotificationsIcon/>}/>

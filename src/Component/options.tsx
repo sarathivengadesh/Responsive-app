@@ -2,7 +2,7 @@ import React from 'react'
 import { options } from '../utils/mockdata.tsx'
 import IconWidget from './Reusable/icon-widget.tsx'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import IconEffect from './icon-bg-effect.tsx';
+import IconEffect from './Reusable/icon-bg-effect.tsx';
 
 export default function Options() {
   return (
